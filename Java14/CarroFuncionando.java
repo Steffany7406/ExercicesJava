@@ -12,13 +12,6 @@ class Motor {
     }
 }
 
-
-
-
-
-
-
-
 public class CarroFuncionando{
     public static void main(String[] args){
         Motor motor = new Motor(150, "Gasolina");
