@@ -10,7 +10,7 @@ public class Main
 	public static void main(String[] args) {
 	    String letra = "10";
 	    int Numero = 6;
-	    int result = Integer.parseInt(letra) + Numero;
+	    int result = Integer.parseInt(letra) / Numero;
 		System.out.println(result);
 	}
 }
