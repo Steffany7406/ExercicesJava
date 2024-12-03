@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        ArrayList<Double> A = new ArrayList<>();
+        ArrayList<Double> B = new ArrayList<>();
+        
+        for (int i = 0; i < 10; i++) {  // Corrigido para iterar de 0 a 9
+            System.out.println("Digite o número que deseja armazenar: ");
+            double num = entrada.nextDouble();
+            
+            if (num > 0) {
+                A.add(num);
+                System.out.println("O número foi adicionado em A");
+            } else if (num < 0) {
+                B.add(num);
+                System.out.println("O número foi adicionado em B");
+            } else {
+                System.out.println("Zero não é armazenado em nenhuma das listas.");
+            }
+        }
+        
+        // Fechar o Scanner
+        entrada.close();
+        
+        // Imprimir as listas (opcional)
+        System.out.println("Lista A: " + A);
+        System.out.println("Lista B: " + B);
+    }
+}
